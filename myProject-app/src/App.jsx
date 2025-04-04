@@ -6,22 +6,21 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
-const helloworld = <h1>This is dev 2 helloworld</h1>;
-const fruits = [
-  'orange',
-  'apple',
-  'Grape'
+const helloworld = <h1>This is dev 1</h1>;
+const cars = [
+  'audi',
+  'bmw',
+  'Hyundai'
 ];
 
-const listFruits = fruits.map( fruit => <li>{fruit}</li>);
+const listCars = cars.map( (car, index) => <li key={index}>{car}</li>);
 
   return (
     <div>
       {helloworld}
       <ul>
-        {listFruits}
+        {listCars}
       </ul>
-      
     </div>
   )
 }
